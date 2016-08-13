@@ -1,4 +1,4 @@
-# terraform-provider-sendmail
+# terraform-provider-sendmail [![CircleCI](https://circleci.com/gh/roboll/terraform-provider-sendmail.svg?style=svg&circle-token=ec059ac879294df4b5424bdc382d2aed35765b04)](https://circleci.com/gh/roboll/terraform-provider-sendmail)
 
 A terraform provider for sending mail using the local `/usr/sbin/sendmail` utility.
 
