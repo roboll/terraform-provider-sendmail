@@ -23,7 +23,7 @@ cross:
 .PHONY: cross
 
 release: cross
-	@ghr -b ${BODY} -t ${GITHUB_TOKEN} -u ${ORG} ${TAG} dist
+	@ghr -b ${BODY} -t ${GITHUB_TOKEN} -u ${ORG} -replace ${TAG} dist
 .PHONY: release
 
 TAG  = $(shell git describe --tags --abbrev=0 HEAD)
