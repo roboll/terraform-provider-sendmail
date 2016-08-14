@@ -1,5 +1,4 @@
 ORG     := $(shell basename $(realpath ..))
-NAME    := $(shell basename $(PWD))
 
 build:
 	go build .
@@ -18,8 +17,7 @@ tools:
 .PHONY: tools
 
 cross:
-	@mkdir -p dist
-	gox -os '!freebsd' -arch '!arm' -output "dist/${NAME}_{{.OS}}_{{.Arch}}"
+	gox -os '!freebsd' -arch '!arm' -output "dist/{{.Dir}}_{{.OS}}_{{.Arch}}"
 .PHONY: cross
 
 release: cross
