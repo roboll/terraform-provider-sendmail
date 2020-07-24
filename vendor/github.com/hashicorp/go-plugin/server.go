@@ -18,7 +18,7 @@ import (
 // will invalidate any prior plugins but will at least allow us to iterate
 // on the core in a safe way. We will do our best to do this very
 // infrequently.
-const CoreProtocolVersion = 1
+const CoreProtocolVersion = 5
 
 // HandshakeConfig is the configuration used by client and servers to
 // handshake before starting a plugin connection. This is embedded by
